@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="assets/icon.jpg" />
+
+  <!-- Todo: put here your site title -->
+  <title>Alexandre | Developer</title>
+  <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+  <meta name="keywords" content="Alexandre, pereon, javascript, css, php, sql, python, angularjs, vuejs" />
+  <!-- Todo: improve your SEO by adding a small description of you -->
+  <meta name="description" content="Alexandre | Developer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.scss" />
+  <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+  <div id="top"></div>
+
+  <!-- **** Hero Section **** -->
+  <section id="hero" class="jumbotron">
+    <div class="container">
+      <h1 class="hero-title load-hidden">
+        Hi, my name is <span class="text-color-main">Alexandre</span>
+        <br />
+        And I'm a <span id="job_typed" class="text-color-main"></span>
+      </h1>
+      <p class="hero-cta load-hidden">
+        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
+      </p>
+    </div>
+  </section>
+  <!-- /END Hero Section -->
+
+  <!-- **** About Section **** -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title load-hidden">About me</h2>
+      <div class="row about-wrapper">
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__image load-hidden">
+            <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px"
+              src="assets/icon.jpg" alt="Profile Image" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__info load-hidden">
+            <!-- <h1 class="glitch">Alexandre</h1> -->
+            <p class="about-wrapper__info-text">
+              I am a first-year computer engineering student pursuing a master's degree at the CESI Graduate School of
+              Engineering.
+              With a strong foundation in web programming, I am eager to contribute to meaningful projects !
+            </p>
+            <p class="about-wrapper__info-text">
+              Fluent in both French and English, I am adaptable, driven, and passionate about technology.
+            </p>
+            <span class="d- mt-3">
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+                href="assets/PEREON Alexandre - resume.pdf">
+                View Resume
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END About Section -->
+
+  <!-- **** Skills Section **** -->
+  <section id="skills">
+    <div class="container">
+      <div class="Skills-wrapper">
+        <h2 class="section-title dark-blue-text">Skills</h2>
+
+        <div class="skills-grid" style="opacity: 1;">
+          <div title="HTML" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">HTML</p>
+          </div>
+          <div title="CSS" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">CSS</p>
+          </div>
+          <div title="Javascript" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">
+              Javascript</p>
+          </div>
+          <!-- <div title="Typescript" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">
+              Typescript</p>
+          </div> -->
+          <div title="Next.js" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M11.5725 0c-.1763 0-.3098.0013-.3584.0067-.0516.0053-.2159.021-.3636.0328-3.4088.3073-6.6017 2.1463-8.624 4.9728C1.1004 6.584.3802 8.3666.1082 10.255c-.0962.659-.108.8537-.108 1.7474s.012 1.0884.108 1.7476c.652 4.506 3.8591 8.2919 8.2087 9.6945.7789.2511 1.6.4223 2.5337.5255.3636.04 1.9354.04 2.299 0 1.6117-.1783 2.9772-.577 4.3237-1.2643.2065-.1056.2464-.1337.2183-.1573-.0188-.0139-.8987-1.1938-1.9543-2.62l-1.919-2.592-2.4047-3.5583c-1.3231-1.9564-2.4117-3.556-2.4211-3.556-.0094-.0026-.0187 1.5787-.0235 3.509-.0067 3.3802-.0093 3.5162-.0516 3.596-.061.115-.108.1618-.2064.2134-.075.0374-.1408.0445-.495.0445h-.406l-.1078-.068a.4383.4383 0 01-.1572-.1712l-.0493-.1056.0053-4.703.0067-4.7054.0726-.0915c.0376-.0493.1174-.1125.1736-.143.0962-.047.1338-.0517.5396-.0517.4787 0 .5584.0187.6827.1547.0353.0377 1.3373 1.9987 2.895 4.3608a10760.433 10760.433 0 004.7344 7.1706l1.9002 2.8782.096-.0633c.8518-.5536 1.7525-1.3418 2.4657-2.1627 1.5179-1.7429 2.4963-3.868 2.8247-6.134.0961-.6591.1078-.854.1078-1.7475 0-.8937-.012-1.0884-.1078-1.7476-.6522-4.506-3.8592-8.2919-8.2087-9.6945-.7672-.2487-1.5836-.42-2.4985-.5232-.169-.0176-1.0835-.0366-1.6123-.037zm4.0685 7.217c.3473 0 .4082.0053.4857.047.1127.0562.204.1642.237.2767.0186.061.0234 1.3653.0186 4.3044l-.0067 4.2175-.7436-1.14-.7461-1.14v-3.066c0-1.982.0093-3.0963.0234-3.1502.0375-.1313.1196-.2346.2323-.2955.0961-.0494.1313-.054.4997-.054z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">Next.js
+            </p>
+          </div>
+          <div title="C Programming" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M16.5921 9.1962s-.354-3.298-3.627-3.39c-3.2741-.09-4.9552 2.474-4.9552 6.14 0 3.6651 1.858 6.5972 5.0451 6.5972 3.184 0 3.5381-3.665 3.5381-3.665l6.1041.365s.36 3.31-2.196 5.836c-2.552 2.5241-5.6901 2.9371-7.8762 2.9201-2.19-.017-5.2261.034-8.1602-2.97-2.938-3.0101-3.436-5.9302-3.436-8.8002 0-2.8701.556-6.6702 4.047-9.5502C7.444.72 9.849 0 12.254 0c10.0422 0 10.7172 9.2602 10.7172 9.2602z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">Programming</p>
+          </div>
+          <div title="C++" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">C++</p>
+          </div>
+          <div title="Python" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">Python
+            </p>
+          </div>
+          <div title="MySQL" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">MySQL
+            </p>
+          </div>
+          <div title="Git" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">Git</p>
+          </div>
+          <div title="Node.js" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z">
+                </path>
+              </svg>
+            </div>
+            <p class="skills-text">Node.js
+            </p>
+          </div>
+          <!-- NEW -->
+          <div title="PHP" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z" />
+              </svg>
+            </div>
+            <p class="skills-text">PHP
+            </p>
+          </div>
+          <div title="Linux" class=" gap-4 p-4 border skills-component">
+            <div class="skills-logo">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
+                class="w-8 h-8" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path
+                  d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.424.424 0 00-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071.771-.06 1.592-.536 2.257-1.306.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.357.357 0 00-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139zm.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105a.086.086 0 01-.004-.021l-.004-.024a1.807 1.807 0 01-.15.706.953.953 0 01-.213.335.71.71 0 00-.088-.042c-.104-.045-.198-.064-.284-.133a1.312 1.312 0 00-.22-.066c.05-.06.146-.133.183-.198.053-.128.082-.264.088-.402v-.02a1.21 1.21 0 00-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 00-.205.334 1.18 1.18 0 00-.09.4v.019c.002.089.008.179.02.267-.193-.067-.438-.135-.607-.202a1.635 1.635 0 01-.018-.2v-.02a1.772 1.772 0 01.15-.768c.082-.22.232-.406.43-.533a.985.985 0 01.594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2.012-.09.013-.18.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.613.613 0 00-.166-.267.248.248 0 00-.183-.064h-.021c-.071.006-.13.04-.186.132a.552.552 0 00-.12.27.944.944 0 00-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268.01.009.02.018.034.024-.07.057-.117.07-.176.136a.304.304 0 01-.131.068 2.62 2.62 0 01-.275-.402 1.772 1.772 0 01-.155-.667 1.759 1.759 0 01.08-.668 1.43 1.43 0 01.283-.535c.128-.133.26-.2.418-.2zm1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.571.571 0 01.016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.139 1.139 0 01-.448-.067 3.566 3.566 0 01-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71-.07-.268-.005-.47.193-.6.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.645 2.645 0 00-.402-.533 1.45 1.45 0 00-.275-.333c.182 0 .338-.03.465-.067a.615.615 0 00.314-.334c.108-.267 0-.697-.345-1.163-.345-.467-.931-.995-1.788-1.521-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.123 8.123 0 01.647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335.039.003.075.006.11.006.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01c.053 0 .105.005.157.014.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602-.369-.066-.61-.2-.723-.4-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336zm7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8.097 8.097 0 01-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065zm-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z" />
+              </svg>
+            </div>
+            <p class="skills-text">Linux
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END Skills Section -->
+
+  <!-- **** Professional  Projects Section **** -->
+  <section id="professional -projects" class="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Professional Projects</h2>
+
+        <!-- Start project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Partnership Deals</h3>
+              <div>
+                <p class="mb-4">
+                  This project consisted of creating a presentation page that allows reservation centers to share local
+                  partnerships with rental property owners to benefit their visitors. The page serves as a showcase,
+                  promoting various partnerships from local businesses, offering exclusive benefits and tailored
+                  experiences.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://itea.fr/">
+                Itea.fr
+              </a>
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
+                Source Code
+              </a> -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/Projects/Project-Partner.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Start project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Corporate Social Responsibility</h3>
+              <div>
+                <p class="mb-4">
+                  The project involved creating a user-friendly web page that provided property owners with a
+                  questionnaire focusing on ecological and economic practices. Upon completion, the questionnaire
+                  generated an "Eco-Gest Score" on a scale of 1 to 5, reflecting the property's sustainability and
+                  eco-friendly practices.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://itea.fr/">
+                Itea.fr
+              </a>
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
+                        Source Code
+                      </a> -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/Projects/Project-Env1.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Start project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Vue3js</h3>
+              <div>
+                <p class="mb-4">
+                  I took on the challenging task of adapting and integrating an existing website onto the Vue.js
+                  framework, specifically utilizing the power of Vue 3. Throughout the project, I meticulously focused
+                  on various aspects, including the development process, efficient build procedures, and seamless
+                  integration of Vue 3 components.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://itea.fr/">
+                Itea.fr
+              </a>
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
+                                Source Code
+                              </a> -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/Projects/Project-vue1.jpg" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+      </div>
+    </div>
+  </section>
+  <!-- /END Professional  Projects Section -->
+
+  <!-- **** School Projects Section **** -->
+  <section id="school-projects" class="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">School Projects</h2>
+
+        <!-- Start project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">System programming</h3>
+              <div>
+                <p class="mb-4">
+                  Successfully developed a C# software application using object-oriented programming principles. The aim
+                  of the project was to create a file backup software with both an MVC (Model-View-Controller)
+                  command-line version and an MVVM (Model-View-ViewModel) version, sharing the same components.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://github.com/PrenyaNyan/Programmation-Systeme">
+                Source Code
+              </a>
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
+                Source Code
+              </a> -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/Projects/Projet-Prog_Sys1.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Start project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Srong Box</h3>
+              <div>
+                <p class="mb-4">
+                  This project aims to create the circuitry and program for a safe using an Arduino board, LEDs, and
+                  simple electronic components to simulate its operation. The safe's opening process involves multiple
+                  steps: activating the electronic circuitry through a combination of switches and, if the combination
+                  is correct, prompting a second security code on a keypad to grant access to the safe's contents.
+                </p>
+              </div>
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                        href="https://github.com/PrenyaNyan/Programmation-Systeme">
+                        Source Code
+                      </a> -->
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
+                        Source Code
+                      </a> -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/Projects/Project-Strong_Box.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+      </div>
+    </div>
+  </section>
+  <!-- /END School Projects Section -->
+
+  <!-- **** Personnal Projects Section **** -->
+  <!-- <section id="school-projects" class="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Personnal Projects</h2>
+
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Project Title 0</h3>
+              <div>
+                <p class="mb-4">
+                  Project description 0
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/project.jpg" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- /END Personnal Projects Section -->
+
+  <!-- **** Contact Section **** -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper load-hidden">
+        <p class="contact-wrapper__text">Need details ? Message me !</p>
+        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:alexandrepereon8@gmail.com"><i
+            class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="callto:+33783516970"><i
+            class="fa fa-mobile" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- /END Contact Section -->
+
+  <!-- **** Footer Section **** -->
+  <footer class="footer navbar-static-bottom">
+    <div class="container">
+      <a rel="noreferrer" href="#top" class="back-to-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a rel="noreferrer" href="https://www.linkedin.com/in/alexandre-pereon-5947701a2/" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+        <a rel="noreferrer" href="#!" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
+      </div>
+
+      <hr />
+
+      <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+      <p class="footer__text">
+        © 2023 -
+        <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank">PEREON Alexandre</a>
+      </p>
+    </div>
+  </footer>
+  <!-- /END Footer Section -->
+
+  <script defer type="module" src="index.js"></script>
+</body>
+
+</html>

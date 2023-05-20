@@ -1,0 +1,71 @@
+// gtrid
+
+.skills-grid {
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+// if phone grid is 2 columns
+@media (max-width: 640px) {
+    // .skills-grid {
+    //     grid-template-columns: repeat(2, minmax(0, 1fr));
+    // }
+
+    .skills-text {
+        display: none;
+    }
+}
+
+// component
+
+@media (min-width: 768px) {
+    .skills-component {
+        transform-origin: top;
+    }
+}
+
+@media (min-width: 640px) {
+    .skills-component {
+        justify-content: flex-start;
+    }
+}
+
+.skills-component {
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+// text
+@media (min-width: 768px) {
+    .skills-text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .skills-text {
+        display: inline-flex;
+    }
+}
+
+.skills-text {
+    font-weight: 600;
+    // font-size: .875rem;
+    line-height: 1.25rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    margin: 0;
+    font-size: large;
+}
+
+.skills-logo {
+    font-size: x-large;
+}
