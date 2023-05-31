@@ -13,16 +13,21 @@ body {
 }
 
 /* Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: $light-grey;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: $primary-color;
+// ::-webkit-scrollbar {
+//   width: 10px;
+//   height: 10px;
+// }
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
+// ::-webkit-scrollbar-thumb {
+//   background: $light-grey;
+// }
+// ::-webkit-scrollbar-thumb:hover {
+//   background: $primary-color;
+// }
+
+// hide scrollbar
+body::-webkit-scrollbar {
+  display: none;
 }

@@ -29,6 +29,15 @@
     padding: 0rem $default-font-size;
   }
 
+  // if computer
+  @media (min-width: 1024px) {
+    .container{
+      position: absolute;
+    }
+  }
+
+
+
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
