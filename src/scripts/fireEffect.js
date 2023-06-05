@@ -1,6 +1,7 @@
 "use strict";
 
 const canvas = document.getElementsByTagName("canvas")[0];
+const hero = document.getElementById("hero");
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
@@ -1549,7 +1550,7 @@ function resizeCanvas() {
     }
 }
 
-canvas.addEventListener("mousemove", (e) => {
+hero.addEventListener("mousemove", (e) => {
     pointers[0].moved = pointers[0].down;
     pointers[0].dx = (e.offsetX - pointers[0].x) * 5.0;
     pointers[0].dy = (e.offsetY - pointers[0].y) * 5.0;
