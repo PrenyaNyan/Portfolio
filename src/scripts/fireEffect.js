@@ -1,7 +1,8 @@
 "use strict";
 
 const canvas = document.getElementsByTagName("canvas")[0];
-const hero = document.getElementById("hero");
+const overlay = document.getElementById("overlay");
+
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
@@ -1482,7 +1483,7 @@ function resizeCanvas() {
     }
 }
 
-hero.addEventListener("mousemove", (e) => {
+overlay.addEventListener("mousemove", (e) => {
     pointers[0].moved = pointers[0].down;
     pointers[0].dx = (e.offsetX - pointers[0].x) * 5.0;
     pointers[0].dy = (e.offsetY - pointers[0].y) * 5.0;
