@@ -1,0 +1,19 @@
+services:
+  web:
+    build:
+      context: .
+    container_name: portfolio
+    ports:
+      - "8080:80"
+    networks:
+      - traefik-net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.my-parcel-app.rule=Host(`alexandrepereon.fr`)"
+      - "traefik.http.routers.my-parcel-app.entrypoints=websecure"
+      - "traefik.http.routers.my-parcel-app.tls=true"
+      - "traefik.http.routers.my-parcel-app.tls.certresolver=myresolver"
+
+networks:
+  traefik-net:
+    external: true
