@@ -1,78 +1,114 @@
-.projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
-  margin-top: -10rem;
-  padding-top: 15rem;
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
 
-  @include respond(tab-land) {
-    margin-top: 0;
-    padding-top: 5rem;
-  }
+.carousel-item {
+  display: none;
+  width: 100%;
+}
 
-  .project-wrapper {
-    margin-bottom: 15rem;
+.carousel-item.active {
+  display: flex;
+}
 
-    @include respond(phone) {
-      margin-bottom: 0rem;
-    }
+.project-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
-    .row {
-      margin-bottom: 8rem;
+.project-text {
+  flex: 1;
+  padding: 1rem;
+}
 
-      @include respond(phone) {
-        margin-bottom: 4rem;
-      }
-    }
+.project-image {
+  flex: 2;
+  padding: 1rem;
+}
 
-    &__text {
-      text-align: left;
+.project-image img {
+  width: 100%;
+  height: auto;
+}
 
-      @include respond(phone) {
-        margin-bottom: 2.5rem !important;
-      }
-      @include respond(tab-land) {
-        margin-bottom: 4.8rem;
-      }
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 
-      &-title {
-        font-weight: bold;
-        margin-bottom: 1.8rem;
-        font-size: $mid-font-size;
+/* Style de base des flèches */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
 
-        @include respond(phone) {
-          font-size: 2rem;
-        }
-      }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: 1.5rem;
+  transition: all 0.3s ease;
+}
 
-      & p > a {
-        color: $secondary-color;
-      }
-    }
+/* Effet hover dark */
+.hover-dark-arrow:hover .carousel-control-prev-icon,
+.hover-dark-arrow:hover .carousel-control-next-icon {
+  background-color: rgba(33, 37, 41, 0.9) !important; /* bg-dark avec opacité */
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
-    &__image {
-      width: 90%;
-      margin: 0 auto;
+/* Version alternative avec fond blanc au repos */
+.carousel-control-prev-icon.bg-white-arrow,
+.carousel-control-next-icon.bg-white-arrow {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
 
-      @include respond(tab-land) {
-        width: 100%;
-        margin: 0;
-      }
+.hover-dark-arrow:hover .bg-white-arrow {
+  background-color: rgba(33, 37, 41, 0.9) !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
 
-      & .thumbnail {
-        border: none;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        transition: all 0.2s ease-out;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-        transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-          0.5s box-shadow,
-          0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+.carousel-control-prev,
+.carousel-control-next {
+  pointer-events: none; /* désactive les clics en dehors des flèches */
+}
 
-        @include respond(phone) {
-          border: 1px solid $light-grey;
-          box-shadow: none;
-          margin-bottom: 3.2rem;
-        }
-      }
-    }
-  }
+.carousel-control-prev span,
+.carousel-control-next span {
+  pointer-events: auto; /* réactive les clics uniquement sur l’icône */
+}
+
+// .carousel-inner {
+//   min-height: 550px;
+// }
+
+// .carousel-item {
+//   min-height: 460px;
+//   display: flex;
+//   align-items: center;
+// }
+
+.project-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* hauteur fixe pour éviter les sauts */
+  overflow: hidden;
+}
+
+.project-image-container img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
 }
