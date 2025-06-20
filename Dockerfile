@@ -1,5 +1,5 @@
 # Étape 1 : Build de l'application avec Parcel
-FROM node:18 AS builder
+FROM node:23-slim AS builder
 
 # Définir le répertoire de travail
 WORKDIR /app
